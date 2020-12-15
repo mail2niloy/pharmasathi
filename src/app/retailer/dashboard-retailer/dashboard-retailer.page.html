@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button expand="block" routerLink="/component-details" routerDirection="backward">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Retailer Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-grid>
+  	<img src="../../assets/retail.png"/>
+    <ion-row>
+      <ion-col size="12">
+        <ion-icon name="person"></ion-icon>
+        <ion-text>
+          <h1>Welcome,
+            <br> Mr. John Doe</h1>
+        </ion-text>
+      </ion-col>
+      <ion-col size="6">
+        <!-- simple card with icon and text -->
+        <ion-card color="tertiary" routerLink="/login">
+          <ion-icon name="person"></ion-icon>
+          <ion-text>
+            <h2>Profile</h2>
+          </ion-text>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <!-- simple card with icon and text -->
+        <ion-card color="danger" routerLink="/list-doctor">
+          <ion-icon name="people"></ion-icon>
+          <ion-text>
+            <h2>Doctor</h2>
+          </ion-text>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <!-- simple card with icon and text -->
+        <ion-card color="success" routerLink="/today-bookings">
+          <ion-icon name="settings"></ion-icon>
+          <ion-text>
+            <h2>Bookings</h2>
+          </ion-text>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <!-- simple card with icon and text -->
+        <ion-card color="secondary" routerLink="/prescriptions">
+          <ion-icon name="list"></ion-icon>
+          <ion-text>
+            <h2>Prescriptions</h2>
+          </ion-text>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <!-- simple card with icon and text -->
+        <ion-card color="tertiary" routerLink="/help-desk">
+          <ion-icon name="add"></ion-icon>
+          <ion-text>
+            <h2>Help Desk</h2>
+          </ion-text>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <!-- simple card with icon and text -->
+        <ion-card color="medium">
+          <ion-icon name="calendar"></ion-icon>
+          <ion-text>
+            <h2>Date</h2>
+          </ion-text>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

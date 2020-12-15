@@ -1,0 +1,85 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button expand="block" routerLink="/tabs/list-doctor" routerDirection="backward">
+                <ion-icon name="arrow-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Add Doctor</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-row>
+        <ion-col size="12">
+            <div>
+                <img src="../../assets/doc-avatar.jpg" />
+            </div>
+            <div>
+                <ion-avatar>
+                    <ion-icon [ngStyle]="{color:itemColor}" name="camera"></ion-icon>
+                </ion-avatar>
+            </div>
+        </ion-col>
+    </ion-row>
+    <!-- form with input text and submit buttons -->
+    <form>
+        <ion-row>
+            <ion-col size="12">
+                <ion-list>
+                    <ion-item>
+                        <ion-input type="text" placeholder="First Name" name="doctorFirstname" required>
+                        </ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-input type="text" placeholder="Last Name" name="doctorLastName" required>
+                        </ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-input type="email" placeholder="Email" name="doctorEmail" required>
+                        </ion-input>
+                    </ion-item>    
+                    <ion-item>
+                        <ion-input type="text" placeholder="Mobile" name="doctorMobile" required>
+                        </ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-input type="text" placeholder="Fees" name="doctorFees" required>
+                        </ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-input type="text" placeholder="Day" name="doctorDay" required>
+                        </ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-input type="text" placeholder="Time" name="doctorTime" required>
+                        </ion-input>
+                    </ion-item>
+                    <ion-item>
+			          <ion-label>Specialist</ion-label>
+			          <ion-select value="03">
+			            <ion-select-option value="01">Child</ion-select-option>
+			            <ion-select-option value="02">Heart</ion-select-option>
+			            <ion-select-option value="03">Neuro</ion-select-option>
+			            <ion-select-option value="04">Nephro</ion-select-option>
+			            <ion-select-option value="05">Eye</ion-select-option>
+			            <ion-select-option value="06">MD General</ion-select-option>
+			          </ion-select>
+			        </ion-item>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <p>Creating an account means you’re okay with our
+                    <a>Term and Services</a>,
+                    <a>Privacy Policy</a> and
+                    <a>Refund Policy</a>
+                </p>
+            </ion-col>
+            <ion-col size="12">
+                <ion-button expand="block" type="submit">Register</ion-button>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>

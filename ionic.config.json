@@ -1,0 +1,7 @@
+{
+  "name": "pharmaSathi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

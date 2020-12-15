@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>list-booking</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-list no-padding>
+    <!-- for sliding item  -->
+    <ion-item-sliding >
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img src="../../assets/avatar.png"></ion-img>
+        </ion-avatar>
+        <ion-label>
+          Patient 1
+          <p>ksduasjdas asd ...</p>
+        </ion-label>
+        <ion-label>
+          Doctor 1
+          <p>ksduasjdas asd ...</p>
+        </ion-label>
+        <p>Complete</p>
+        <ion-icon name="arrow-dropright-circle"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img src="../../assets/avatar.png"></ion-img>
+        </ion-avatar>
+        <ion-label>
+          Patient 1
+          <p>ksduasjdas asd ...</p>
+        </ion-label>
+        <ion-label>
+          Doctor 1
+          <p>ksduasjdas asd ...</p>
+        </ion-label>
+        <p>Complete</p>
+        <ion-icon name="arrow-dropright-circle"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img src="../../assets/avatar.png"></ion-img>
+        </ion-avatar>
+        <ion-label>
+          Patient 1
+          <p>ksduasjdas asd ...</p>
+        </ion-label>
+        <ion-label>
+          Doctor 1
+          <p>ksduasjdas asd ...</p>
+        </ion-label>
+        <p>Complete</p>
+        <ion-icon name="arrow-dropright-circle"></ion-icon>
+      </ion-item>
+      <!-- slide item from right -->
+      <ion-item-options side="end">
+        <ion-button fill="clear">
+          <ion-icon [ngStyle]="{color:itemColor}" name="add-circle"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear">
+          <ion-icon [ngStyle]="{color:itemColor}" name="remove-circle"></ion-icon>
+        </ion-button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>
